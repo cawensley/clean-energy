@@ -8,7 +8,7 @@ const Footer=()=> {
                 <div className="row">
 
                     {/*Footer Location*/}
-                    <div className="col-lg-4 mb-5 mb-lg-0">
+                    <div className="col-lg-6 mb-5 mb-lg-0">
                         <h4 className="text-uppercase mb-4">Headquarters Location</h4>
                         <p className="lead mb-0">2260 Baseline Road, Suite 200</p>
                         <p className="lead mb-0">Boulder CO 80302</p>
@@ -17,7 +17,7 @@ const Footer=()=> {
                     </div>
 
                     {/*Footer Social Icons*/}
-                    <div className="col-lg-4 mb-5 mb-lg-0">
+                    <div className="col-lg-6 mb-5 mb-lg-0">
                         <h4 className="text-uppercase mb-4">Around the Web</h4>
                         <a className="btn btn-outline-light btn-social mx-1"
                            href="https://www.facebook.com/westernresourceadvocates">
@@ -34,13 +34,6 @@ const Footer=()=> {
                            href="https://www.instagram.com/westernresourceadvocates/">
                             <i className="fab fa-instagram"></i>
                         </a>
-                    </div>
-
-                    {/*Footer About Text*/}
-                    <div className="col-lg-4">
-                        <h4 className="text-uppercase mb-4">About WRA</h4>
-                        <p className="lead mb-0">Western Resource Advocates serves a unique role in our ability to link
-                            local and regional action to protect our land, air, and water.</p>
                     </div>
                 </div>
             </div>
