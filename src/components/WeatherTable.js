@@ -5,13 +5,13 @@ class WeatherTable extends Component {
         super();
         this.state = {
             input: '',
-            zipCode: '80503',
+            zipCode: '',
             currentWeather: {
                 main: {
-                    temp: '',
+                    temp: '255.38',
                     humidity: '',
-                    temp_min: '',
-                    temp_max: '',
+                    temp_min: '255.38',
+                    temp_max: '255.38',
                 },
                 name: '',
                 wind: {
@@ -24,18 +24,11 @@ class WeatherTable extends Component {
         }
     }
 
-    componentDidMount() {
-        fetch('http://api.openweathermap.org/data/2.5/weather?zip=80503,us&APPID=7f838af83bf39591f00de86b6f7329e1')
-            .then(response=> response.json())
-            .then(data => {this.setState({ currentWeather: data})});
-    };
-
     onInputChange=(event) => {this.setState({input: event.target.value})};
 
     onButtonSubmit = () => {
         this.setState({zipCode: this.state.input});
-        let weatherURL = "http://api.openweathermap.org/data/2.5/weather?zip=32233,us&APPID=7f838af83bf39591f00de86b6f7329e1";
-        fetch(weatherURL)
+        fetch(`http://api.openweathermap.org/data/2.5/weather?zip=${this.state.input},us&APPID=7f838af83bf39591f00de86b6f7329e1`)
             .then(response=> response.json())
             .then(data => {this.setState({ currentWeather: data})});
     };
