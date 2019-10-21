@@ -19,7 +19,7 @@ function Education() {
                     <div className="divider-custom-line"></div>
                 </div>
 
-                <CardList EducationPages={EducationPages}/>
+                    <CardList EducationPages={EducationPages}/>
 
             </div>
         </div>

@@ -9,7 +9,7 @@ const Footer=()=> {
 
                     {/*Footer Location*/}
                     <div className="col-lg-6 mb-5 mb-lg-0">
-                        <h4 className="text-uppercase mb-4">Headquarters Location</h4>
+                        <h4 className="text-uppercase mb-4">WRA Headquarters Location</h4>
                         <p className="lead mb-0">2260 Baseline Road, Suite 200</p>
                         <p className="lead mb-0">Boulder CO 80302</p>
                         <p className="lead mb-0">Phone: 303.444.1188</p>
@@ -18,7 +18,7 @@ const Footer=()=> {
 
                     {/*Footer Social Icons*/}
                     <div className="col-lg-6 mb-5 mb-lg-0">
-                        <h4 className="text-uppercase mb-4">Around the Web</h4>
+                        <h4 className="text-uppercase mb-4">WRA Around the Web</h4>
                         <a className="btn btn-outline-light btn-social mx-1"
                            href="https://www.facebook.com/westernresourceadvocates">
                             <i className="fab fa-fw fa-facebook-f"></i>
