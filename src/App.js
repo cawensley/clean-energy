@@ -1,8 +1,8 @@
 import React, {Component} from 'react';
 import {BrowserRouter as Router, Switch, Route} from "react-router-dom";
-import Home from "./pages/home"
-import About from "./pages/about"
-import Education from "./pages/education"
+import Home from "./pages/home/home"
+import About from "./pages/about/about"
+import Education from "./pages/education/education"
 import MainNavBar from "./components/mainnavbar"
 import Footer from "./components/Footer";
 
