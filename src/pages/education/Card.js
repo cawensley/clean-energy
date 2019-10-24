@@ -1,5 +1,6 @@
 import React from 'react';
-import "./Card.css";
+import "./education.css";
+import {Link} from "react-router-dom";
 
 const Card=({CardPhoto,Title,Description,Weblink})=> {
     return (
@@ -8,7 +9,7 @@ const Card=({CardPhoto,Title,Description,Weblink})=> {
                 <div className="card-body">
                     <h5 className="card-title">{Title}</h5>
                     <p className="card-text lead">{Description}</p>
-                    <a href={Weblink} className="btn btn-primary">Learn More!</a>
+                    <Link to={Weblink} className="btn btn-primary">Learn More!</Link>
                 </div>
         </div>
     )

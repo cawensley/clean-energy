@@ -14,7 +14,7 @@ function Education() {
                 <div className="divider-custom divider-light">
                     <div className="divider-custom-line"></div>
                     <div className="divider-custom-icon">
-                        <i className="fas fa-star"></i>
+                        <i className="fas fa-bolt"></i>
                     </div>
                     <div className="divider-custom-line"></div>
                 </div>

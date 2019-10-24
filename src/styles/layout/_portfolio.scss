@@ -12,7 +12,6 @@
     .portfolio-item-caption {
       position: absolute;
       top: 0;
-      left: 0;
       transition: $transition-base;
       opacity: 0;
       background-color: fade-out($primary, .1);
