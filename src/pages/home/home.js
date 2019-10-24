@@ -9,15 +9,15 @@ function Home() {
                 <div className="divider-custom divider-light">
                     <div className="divider-custom-line"></div>
                     <div className="divider-custom-icon">
-                        <i className="fas fa-star"></i>
+                        <i className="fas fa-bolt"></i>
                     </div>
                     <div className="divider-custom-line"></div>
                 </div>
-                <div className="row text-white d-flex">
-                    <div className="col-lg-6 mb-3">
-                        <img className="" src="https://ensia.com/wp-content/uploads/2016/11/article_wind_and_solar_main-760x378.jpg" alt="Error Loading"/>
+                <div className="row d-flex">
+                    <div className="col-lg-6 col-xl-6 mb-3 pr-5 pl-5">
+                        <img className="w-100 border border-dark" src="https://ensia.com/wp-content/uploads/2016/11/article_wind_and_solar_main-760x378.jpg" alt="Error Loading"/>
                     </div>
-                    <div className="col-lg-6">
+                    <div className="col-lg-6 col-xl-6 mb-3">
                         <WeatherTable/>
                     </div>
                 </div>
