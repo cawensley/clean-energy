@@ -1,24 +1,24 @@
 {
   "files": {
-    "main.css": "/cleanNRGtesting/static/css/main.db5b05d5.chunk.css",
-    "main.js": "/cleanNRGtesting/static/js/main.e6b490bf.chunk.js",
-    "main.js.map": "/cleanNRGtesting/static/js/main.e6b490bf.chunk.js.map",
-    "runtime-main.js": "/cleanNRGtesting/static/js/runtime-main.602df5c6.js",
-    "runtime-main.js.map": "/cleanNRGtesting/static/js/runtime-main.602df5c6.js.map",
-    "static/css/2.584cfa7f.chunk.css": "/cleanNRGtesting/static/css/2.584cfa7f.chunk.css",
-    "static/js/2.e0c0d24c.chunk.js": "/cleanNRGtesting/static/js/2.e0c0d24c.chunk.js",
-    "static/js/2.e0c0d24c.chunk.js.map": "/cleanNRGtesting/static/js/2.e0c0d24c.chunk.js.map",
-    "index.html": "/cleanNRGtesting/index.html",
-    "precache-manifest.9e6f0b0a53ebbdccb9c4d374560dc162.js": "/cleanNRGtesting/precache-manifest.9e6f0b0a53ebbdccb9c4d374560dc162.js",
-    "service-worker.js": "/cleanNRGtesting/service-worker.js",
-    "static/css/2.584cfa7f.chunk.css.map": "/cleanNRGtesting/static/css/2.584cfa7f.chunk.css.map",
-    "static/css/main.db5b05d5.chunk.css.map": "/cleanNRGtesting/static/css/main.db5b05d5.chunk.css.map"
+    "main.css": "/clean-energy/static/css/main.db5b05d5.chunk.css",
+    "main.js": "/clean-energy/static/js/main.d47c86db.chunk.js",
+    "main.js.map": "/clean-energy/static/js/main.d47c86db.chunk.js.map",
+    "runtime-main.js": "/clean-energy/static/js/runtime-main.f2511a38.js",
+    "runtime-main.js.map": "/clean-energy/static/js/runtime-main.f2511a38.js.map",
+    "static/css/2.584cfa7f.chunk.css": "/clean-energy/static/css/2.584cfa7f.chunk.css",
+    "static/js/2.e0c0d24c.chunk.js": "/clean-energy/static/js/2.e0c0d24c.chunk.js",
+    "static/js/2.e0c0d24c.chunk.js.map": "/clean-energy/static/js/2.e0c0d24c.chunk.js.map",
+    "index.html": "/clean-energy/index.html",
+    "precache-manifest.4b5847fdf74cb90a23783acdda4119ac.js": "/clean-energy/precache-manifest.4b5847fdf74cb90a23783acdda4119ac.js",
+    "service-worker.js": "/clean-energy/service-worker.js",
+    "static/css/2.584cfa7f.chunk.css.map": "/clean-energy/static/css/2.584cfa7f.chunk.css.map",
+    "static/css/main.db5b05d5.chunk.css.map": "/clean-energy/static/css/main.db5b05d5.chunk.css.map"
   },
   "entrypoints": [
-    "static/js/runtime-main.602df5c6.js",
+    "static/js/runtime-main.f2511a38.js",
     "static/css/2.584cfa7f.chunk.css",
     "static/js/2.e0c0d24c.chunk.js",
     "static/css/main.db5b05d5.chunk.css",
-    "static/js/main.e6b490bf.chunk.js"
+    "static/js/main.d47c86db.chunk.js"
   ]
 }
