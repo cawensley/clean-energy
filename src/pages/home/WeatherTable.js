@@ -44,8 +44,11 @@ class WeatherTable extends Component {
     render() {
         const {currentWeather,zipCode,isLoading,eRRor} = this.state;
 
-        if (eRRor) {return (<div><p>{eRRor.message}</p>
-            <button type="button" value="Refresh" className="btn btn-secondary" onClick={this.refreshPage}>Refresh</button></div>)};
+        if (eRRor) {return (<div className="text-center">
+            <p>{eRRor.message}</p>
+            <button type="button" value="Refresh" className="btn btn-secondary" onClick={this.refreshPage}>Refresh</button>
+            </div>)};
+
         if (isLoading) {return <p>Loading...</p>};
 
         var windSpeed = (currentWeather.wind.speed)*2.237;
@@ -54,8 +57,8 @@ class WeatherTable extends Component {
         var lowTemp = (currentWeather.main.temp_min-273.15)*9/5+32;
 
         return (
-            <div>
-                <table className="table table-dark table-striped table-bordered table-sm w-75 ml-4">
+            <div className="container d-flex justify-content-center">
+                <table className="table table-dark table-striped table-bordered table-sm text-center w-75">
                     <tbody>
                     <tr className="h6">
                         <td className="align-middle text-warning">Enter a Zip Code for current Weather data:</td>
