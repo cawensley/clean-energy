@@ -17,7 +17,7 @@ function About() {
 
              <div className="row d-flex">
                 <div className="col-6 mb-5 text-right">
-                    <img className="facephoto" src="https://github.com/cawensley/clean-energy/blob/master/src/pages/about/kenface.jpg?raw=true" alt="Load Error!"/>
+                    <img className="facephoto" src="https://raw.githubusercontent.com/cawensley/clean-energy/master/src/pages/about/kenface.jpg" alt="Load Error!"/>
                 </div>
                  <div className="col-6 mb-5 text-left pl-3 pr-5">
                     <p className="lead text-uppercase font-weight-bold">Ken Wilson – Engineer and Scientist</p>
@@ -32,7 +32,7 @@ function About() {
 
              <div className="row d-flex">
                 <div className="col-6 mb-5 text-right">
-                    <img className="facephoto" src="https://github.com/cawensley/clean-energy/blob/master/src/pages/about/AlexWensleyCrop.jpg?raw=true" alt="Load Error!"/>
+                    <img className="facephoto" src="https://raw.githubusercontent.com/cawensley/clean-energy/master/src/pages/about/AlexWensleyCrop.jpg" alt="Load Error!"/>
                 </div>
                 <div className="col-6 mb-5 text-left pl-3 pr-5">
                     <p className="lead text-uppercase font-weight-bold">Alex Wensley – Webmaster and Engineer</p>
