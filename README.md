@@ -1,8 +1,22 @@
-Step 1)  Download the files to your hard-drive.
+**(1)** How to run the project locally:
 
+Step 1) Download the files to your hard-drive.
 Step 2) In the console, navigate to the downloaded directory, then run  `npm install' to install the dependent Node modules.
-**bootstrap and SASS are the only dependents**
-
 Step 3) Run 'npm update' to update any modules that need it.
-
 Step 4) Run 'npm start' to initialize the website.
+
+**(2)** How to view the webpage online:
+https://cawensley.github.io/clean-energy/
+
+**(3)** Thought process when creating the website
+It's an educational website about Clean-Energy, with content provided by a clean-energy expert who wants to help educate Industrial
+Utilities and State Energy Commissions on the realistic expectations for clean-energy integration costs and timelines.  States involved
+are (CO, NV, AZ, UT).
+
+**(4)** Any trade offs you made?
+The website currently doesn't have a 'WoW' factor, because I still need to find something that fits the educational theme without 
+taking away from the seriousness of the content.
+
+**(5)** Anything you might implement with more time (features, fixes, technical debt corrections etc).
+The website will have more educational pages added to it, and then likely change the education navigation to a 'dropdown' style.  An 
+additional 'sponsors' page will likely be added, with links to power utilities and energy commissions.
