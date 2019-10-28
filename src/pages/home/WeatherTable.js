@@ -49,7 +49,7 @@ class WeatherTable extends Component {
             <button type="button" value="Refresh" className="btn btn-secondary" onClick={this.refreshPage}>Refresh</button>
             </div>)};
 
-        if (isLoading) {return <p>Loading...</p>};
+        if (isLoading) {return (<div className="text-center"><p>Loading...</p></div>)};
 
         var windSpeed = (currentWeather.wind.speed)*2.237;
         var highTemp = (currentWeather.main.temp_max-273.15)*9/5+32;
