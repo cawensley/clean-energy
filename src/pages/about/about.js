@@ -16,7 +16,7 @@ function About() {
             </div>
 
              <div className="row d-flex">
-                <div className="col-6 mb-5 text-right">
+                <div className="col-6 mb-5 text-right pr-5">
                     <img className="facephoto" src="https://raw.githubusercontent.com/cawensley/clean-energy/master/src/pages/about/kenface.jpg" alt="Load Error!"/>
                 </div>
                  <div className="col-6 mb-5 text-left pl-3 pr-5">
@@ -31,7 +31,7 @@ function About() {
              </div>
 
              <div className="row d-flex">
-                <div className="col-6 mb-5 text-right">
+                <div className="col-6 mb-5 text-right pr-5">
                     <img className="facephoto" src="https://raw.githubusercontent.com/cawensley/clean-energy/master/src/pages/about/AlexWensleyCrop.jpg" alt="Load Error!"/>
                 </div>
                 <div className="col-6 mb-5 text-left pl-3 pr-5">
