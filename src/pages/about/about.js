@@ -2,8 +2,8 @@ import React from "react";
 import "./about.css"
 
 function About() {
-    return <h1>
-        <div className="page-section bg-primary text-white portfolio">
+    return <h1 className="mb-0">
+        <div className="page-section bgTurbines text-white txtshdw">
 
             <h2 className="page-section-heading text-center">Who We Are</h2>
 

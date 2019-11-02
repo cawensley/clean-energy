@@ -9,10 +9,10 @@ const Footer=()=> {
                     {/*Footer Location*/}
                     <div className="mb-3 mb-lg-0">
                         <h4 className="text-uppercase lead font-weight-bold mb-3">WRA Headquarters</h4>
-                        <p className="copyright bg-secondary mb-0">2260 Baseline Road, Suite 200</p>
-                        <p className="copyright bg-secondary  mb-0">Boulder CO 80302</p>
-                        <p className="copyright bg-secondary  mb-0">Phone: 303.444.1188</p>
-                        <p className="copyright bg-secondary  mb-1">Fax: 303.786.8054</p>
+                        <p className="mb-0">2260 Baseline Road, Suite 200</p>
+                        <p className="mb-0">Boulder CO 80302</p>
+                        <p className="mb-0">Phone: 303.444.1188</p>
+                        <p className="mb-1">Fax: 303.786.8054</p>
 
                         {/*Footer Social Icons*/}
                         <a className="btn btn-outline-light btn-social mx-1"

@@ -4,11 +4,11 @@ import {EducationPages} from './RawEducationData';
 
 
 function Education() {
-    return <h1>
-        <div className="page-section portfolio bg-primary">
+    return <h1 className="mb-0">
+        <div className="page-section bgTurbines">
             <div className="container">
 
-                <h2 className="page-section-heading text-center text-white">Clean Energy
+                <h2 className="page-section-heading text-center text-white txtshdw">Clean Energy
                     Education</h2>
 
                 <div className="divider-custom divider-light">

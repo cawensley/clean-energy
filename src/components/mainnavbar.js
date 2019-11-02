@@ -3,7 +3,7 @@ import React from "react";
 
 const MainNavBar=()=> {
     return (
-        <nav className="navbar navbar-expand bg-secondary fixed-top text-uppercase" id="mainNav">
+        <nav className="bg-secondary navbar navbar-expand fixed-top text-uppercase" id="mainNav">
             <div className="container">
                 <Link to="/" className="navbar-brand nav-link py-3 px-3 rounded">Home</Link>
                 <div>
