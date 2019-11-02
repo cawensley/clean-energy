@@ -9,6 +9,9 @@
     &:hover {
       color: $primary;
     }
+    &:focus {
+      color: $warning;
+    }
   }
   .navbar-nav {
     li.nav-item {
@@ -19,7 +22,7 @@
         }
         &:active,
         &:focus {
-          color: $white;
+          color: $warning;
         }
         &.active {
           color: $primary;

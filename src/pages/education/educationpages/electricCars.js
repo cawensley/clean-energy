@@ -2,8 +2,8 @@ import React from "react";
 import {EducationPages} from "../RawEducationData";
 
 function electricCars() {
-    return <h1>
-        <div className="page-section portfolio bg-primary">
+    return <h1 className="bgTurbines txtshdw">
+        <div className="page-section portfolio">
             <div className="container">
 
                 <h2 className="page-section-heading text-center text-white">{EducationPages[2].Title}</h2>
