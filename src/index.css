@@ -1,0 +1,15 @@
+body {
+    margin: 0;
+    padding: 0;
+}
+
+.bgTurbines {
+    background-image: url("https://i1.wp.com/media.boingboing.net/wp-content/uploads/2019/10/1ukmBQ_Q.jpeg?w=1940&ssl=1");
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+.txtshdw {
+    text-shadow: 1px 1px black;
+}

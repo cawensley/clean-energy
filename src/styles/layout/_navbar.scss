@@ -1,0 +1,33 @@
+// Styling for the navbar
+#mainNav {
+  padding-top: 0rem;
+  padding-bottom: 0rem;
+  font-family: $headings-font-family;
+  font-weight: $headings-font-weight;
+  .navbar-brand {
+    color: $white;
+    &:hover {
+      color: $primary;
+    }
+    &:focus {
+      color: $warning;
+    }
+  }
+  .navbar-nav {
+    li.nav-item {
+      a.nav-link {
+        color: $white;
+        &:hover {
+          color: $primary;
+        }
+        &:active,
+        &:focus {
+          color: $warning;
+        }
+        &.active {
+          color: $primary;
+        }
+      }
+    }
+  }
+}

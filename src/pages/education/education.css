@@ -1,0 +1,18 @@
+.card {
+    width: 23rem;
+}
+
+.imagz {
+    height: 200px;
+}
+
+.imagzlarge {
+    width: 100%;
+    border: 2px solid black;
+}
+
+.pagesdescription {
+    font-size: xx-large;
+    color: white;
+    font-style: italic;
+}
