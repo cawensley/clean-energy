@@ -6,8 +6,8 @@ import Education from "./pages/education/education"
 import Solar from "./pages/education/educationpages/solar"
 import Wind from "./pages/education/educationpages/wind"
 import electricCars from "./pages/education/educationpages/electricCars"
-import MainNavBar from "./components/mainnavbar"
-import Footer from "./components/Footer";
+import MainNavBar from "./organisms/mainnavbar"
+import Footer from "./organisms/Footer";
 
 class App extends Component {
 

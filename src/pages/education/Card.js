@@ -1,5 +1,4 @@
 import React from 'react';
-import "./education.css";
 import {Link} from "react-router-dom";
 
 const Card=({CardPhoto,Title,Description,Weblink})=> {
