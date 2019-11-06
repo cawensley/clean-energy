@@ -3,7 +3,7 @@ import React from 'react';
 const PageHeading=({title})=> {
     return (
         <div>
-            <h2 className="page-section-heading text-center text-white txtshdw">
+            <h2 className="page-section-heading text-center text-white">
                 {title}</h2>
 
             <div className="divider-custom divider-light">

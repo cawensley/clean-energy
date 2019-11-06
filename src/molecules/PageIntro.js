@@ -6,7 +6,7 @@ const PageIntro=({image,text})=> {
                 <div className="col-lg-6 col-xl-6 mb-3">
                     <img className="imagzlarge" src={image} alt="Error Loading"/>
                 </div>
-                <div className="col-lg-6 col-xl-6 mb-5 text-white font-italic h2 txtshdw">
+                <div className="col-lg-6 col-xl-6 mb-5 text-white font-italic h2">
                     {text}
                 </div>
             </div>

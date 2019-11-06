@@ -10,8 +10,6 @@ $border-radius: 0.5rem !default;
 $border-radius-lg: 0.75rem !default;
 $border-radius-sm: 0.25rem !default;
 $input-btn-border-width: $border-width !default;
-$modal-inner-padding: 4rem 1rem !default;
-$modal-content-border-width: 0 !default;
 
 @import "bootstrap/scss/bootstrap.scss";
 
@@ -118,7 +116,8 @@ $modal-content-border-width: 0 !default;
 }
 
 .card {
-  width: 23rem;
+  width: 22rem;
+  max-width: 45%;
 }
 
 .imagz {
@@ -137,11 +136,11 @@ $modal-content-border-width: 0 !default;
   background-size: cover;
 }
 
-.txtshdw {
-  text-shadow: 1px 1px black;
-}
-
 .facephoto {
   height: 16rem;
   border: 2px solid black;
+}
+
+.transparent {
+  background-color: rgba(0,0,0,0.50);
 }

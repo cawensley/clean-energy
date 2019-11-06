@@ -2,7 +2,7 @@ import React from 'react';
 
 const ParaGraph=({text})=> {
     return (
-        <div className="lead text-white txtshdw mb-4">{text}</div>
+        <div className="lead text-white mb-4 transparent p-1">{text}</div>
     )
 };
 
