@@ -28,6 +28,7 @@ class WeatherTable extends Component {
     }
 
     onInputChange=(event) => {this.setState({input: event.target.value})};
+    keyPressed=(event) => {if (event.key === "Enter") {this.onButtonSubmit()}};
 
     onButtonSubmit = () => {
         this.setState({isLoading: true});
@@ -40,17 +41,31 @@ class WeatherTable extends Component {
             .catch(eRRor => this.setState({eRRor,isLoading: false}));
     };
 
+    componentDidMount() {
+        this.setState({isLoading: true});
+        navigator.geolocation.getCurrentPosition(position => {
+            fetch(`https://api.bigdatacloud.net/data/reverse-geocode-client?latitude=${position.coords.latitude}&longitude=${position.coords.longitude}&localityLanguage=en`)
+                .then(response=> {
+                    if (response.ok) {return response.json();}
+                    else {throw new Error(`Can't Locate Your Zip Code.`);}})
+                .then(data => this.setState({ input: data.postcode}))
+                .then(this.onButtonSubmit)
+                .catch(eRRor => this.setState({eRRor,isLoading: false}))
+        });
+    };
+
     refreshPage = () => {window.location.reload(true)};
 
     render() {
-        const {currentWeather,zipCode,isLoading,eRRor} = this.state;
+        const {currentWeather,zipCode,isLoading,eRRor,input} = this.state;
 
         if (eRRor) {return (<div className="text-center text-white">
             <p>{eRRor.message}</p>
-            <button type="button" value="Refresh" className="btn btn-primary" onClick={this.refreshPage}>Refresh</button>
+            <button type="button" value="Refresh" className="btn btn-primary mb-3" onClick={this.refreshPage}>Refresh</button>
             </div>)};
 
-        if (isLoading) {return (<div className="text-center text-white"><p>Loading...</p></div>)};
+        if (isLoading) {return (<p className="text-center text-white">
+            <i className="fas fa-5x fa-cog fa-spin"></i></p>)};
 
         var windSpeed = (currentWeather.wind.speed)*2.237;
 
@@ -61,7 +76,8 @@ class WeatherTable extends Component {
                     <tr className="h6">
                         <td className="align-middle text-warning">Enter a Zip Code for current Weather data:</td>
                         <td>
-                            <input type="text" size="8" maxLength="5" className="h6" onChange={this.onInputChange}/>
+                            <input type="text" size="8" maxLength="5" className="h6" onChange={this.onInputChange}
+                            onKeyPress={this.keyPressed}/>
                             <button type="submit" value="Submit" className="btn btn-primary"
                                     onClick={this.onButtonSubmit}>Submit</button>
                         </td>
