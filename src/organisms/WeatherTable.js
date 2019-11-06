@@ -8,7 +8,6 @@ class WeatherTable extends Component {
             isLoading: false,
             eRRor: null,
             input: null,
-            zipCode: null,
             currentWeather: {
                 main: {
                     temp: null,
@@ -27,12 +26,13 @@ class WeatherTable extends Component {
         }
     }
 
-    onInputChange=(event) => {this.setState({input: event.target.value})};
+    onInputChange=(event) => {this.setState({input: event.target.value});};
+
     keyPressed=(event) => {if (event.key === "Enter") {this.onButtonSubmit()}};
 
     onButtonSubmit = () => {
         this.setState({isLoading: true});
-        this.setState({zipCode: this.state.input});
+        localStorage.setItem('storedZip',this.state.input);
         fetch(`https://api.openweathermap.org/data/2.5/weather?zip=${this.state.input},us&APPID=7f838af83bf39591f00de86b6f7329e1`)
             .then(response=> {
                 if (response.ok) {return response.json();}
@@ -48,18 +48,27 @@ class WeatherTable extends Component {
                 .then(response=> {
                     if (response.ok) {return response.json();}
                     else {throw new Error(`Can't Locate Your Zip Code.`);}})
-                .then(data => this.setState({ input: data.postcode}))
+                .then(data => {
+                    if (localStorage.getItem('storedZip')===`null`) {
+                        this.setState({input: data.postcode})}
+                    else {
+                        this.setState({input: localStorage.getItem('storedZip')})
+                    }})
                 .then(this.onButtonSubmit)
                 .catch(eRRor => this.setState({eRRor,isLoading: false}))
         });
     };
 
-    refreshPage = () => {window.location.reload(true)};
+    refreshPage = () => {
+        localStorage.setItem('storedZip',null);
+        window.location.reload(true)
+    };
 
     render() {
-        const {currentWeather,zipCode,isLoading,eRRor,input} = this.state;
+        const {currentWeather,isLoading,eRRor,input} = this.state;
 
-        if (eRRor) {return (<div className="text-center text-white">
+        if (eRRor) {return (
+            <div className="text-center text-white">
             <p>{eRRor.message}</p>
             <button type="button" value="Refresh" className="btn btn-primary mb-3" onClick={this.refreshPage}>Refresh</button>
             </div>)};
@@ -71,14 +80,14 @@ class WeatherTable extends Component {
 
         return (
             <div className="container d-flex justify-content-center">
-                <table className="table table-dark table-striped table-bordered table-sm text-center w-75">
+                <table className="table table-dark table-striped table-bordered table-sm text-center w-auto">
                     <tbody>
                     <tr className="h6">
                         <td className="align-middle text-warning">Enter a Zip Code for current Weather data:</td>
                         <td>
                             <input type="text" size="8" maxLength="5" className="h6" onChange={this.onInputChange}
                             onKeyPress={this.keyPressed}/>
-                            <button type="submit" value="Submit" className="btn btn-primary"
+                            <button type="submit" value="Submit" className="btn btn-primary btn-sm"
                                     onClick={this.onButtonSubmit}>Submit</button>
                         </td>
                     </tr>
@@ -112,7 +121,7 @@ class WeatherTable extends Component {
                     </tr>
                     <tr className="h6">
                         <td>Zipcode:</td>
-                        <td>{zipCode}</td>
+                        <td>{localStorage.getItem('storedZip')}</td>
                     </tr>
                     </tbody>
                 </table>
