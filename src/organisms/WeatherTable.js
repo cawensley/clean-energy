@@ -6,7 +6,7 @@ class WeatherTable extends Component {
         super();
         this.state = {
             isLoading: false,
-            eRRor: null,
+            error: null,
             input: null,
             currentWeather: {
                 main: {
@@ -38,7 +38,7 @@ class WeatherTable extends Component {
                 if (response.ok) {return response.json();}
                 else {throw new Error(`Invalid Zip Code:  ${this.state.input}.`);}})
             .then(data => this.setState({ currentWeather: data,isLoading: false}))
-            .catch(eRRor => this.setState({eRRor,isLoading: false}));
+            .catch(error => this.setState({error,isLoading: false}));
     };
 
     componentDidMount() {
@@ -55,7 +55,7 @@ class WeatherTable extends Component {
                         this.setState({input: localStorage.getItem('storedZip')})
                     }})
                 .then(this.onButtonSubmit)
-                .catch(eRRor => this.setState({eRRor,isLoading: false}))
+                .catch(error => this.setState({error,isLoading: false}))
         });
     };
 
@@ -65,11 +65,11 @@ class WeatherTable extends Component {
     };
 
     render() {
-        const {currentWeather,isLoading,eRRor,input} = this.state;
+        const {currentWeather,isLoading,error,input} = this.state;
 
-        if (eRRor) {return (
+        if (error) {return (
             <div className="text-center text-white">
-            <p>{eRRor.message}</p>
+            <p>{error.message}</p>
             <button type="button" value="Refresh" className="btn btn-primary mb-3" onClick={this.refreshPage}>Refresh</button>
             </div>)};
 

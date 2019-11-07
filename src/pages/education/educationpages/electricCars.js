@@ -1,5 +1,5 @@
 import React from "react";
-import {EducationPages} from "../RawEducationData";
+import {EducationPages} from "../../../atoms/RawEducationData";
 import PageHeading from "../../../molecules/PageHeading";
 import PageIntro from "../../../molecules/PageIntro";
 import ParaGraph from "../../../atoms/ParaGraph";

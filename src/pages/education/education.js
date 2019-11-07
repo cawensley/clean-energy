@@ -1,6 +1,6 @@
 import React from "react";
-import CardList from "./CardList";
-import {EducationPages} from './RawEducationData';
+import CardList from "../../molecules/CardList";
+import {EducationPages} from '../../atoms/RawEducationData';
 import PageHeading from "../../molecules/PageHeading";
 
 
