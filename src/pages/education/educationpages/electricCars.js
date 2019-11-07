@@ -9,9 +9,9 @@ function electricCars() {
         <div className="bgTurbines mb-0 page-section">
             <div className="container">
 
-                <PageHeading title={EducationPages[2].Title}/>
+                <PageHeading title={EducationPages[2].title}/>
 
-                <PageIntro image={EducationPages[2].CardPhoto} text={EducationPages[2].Description}/>
+                <PageIntro image={EducationPages[2].cardphoto} text={EducationPages[2].description}/>
 
                 <ParaGraph text={`An electric car is an automobile that is propelled by one or more electric motors,
                 using energy stored in rechargeable batteries. The first practical electric cars were produced in the 1880s.

@@ -9,9 +9,9 @@ function Solar() {
         <div className="bgTurbines mb-0 page-section">
             <div className="container">
 
-                <PageHeading title={EducationPages[0].Title}/>
+                <PageHeading title={EducationPages[0].title}/>
 
-                <PageIntro image={EducationPages[0].CardPhoto} text={EducationPages[0].Description}/>
+                <PageIntro image={EducationPages[0].cardphoto} text={EducationPages[0].description}/>
 
                 <ParaGraph text={`Solar power is the conversion of energy from sunlight into electricity,
                 either directly using photovoltaics (PV), indirectly using concentrated solar power, or a combination.

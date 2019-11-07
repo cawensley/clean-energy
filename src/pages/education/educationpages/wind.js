@@ -9,9 +9,9 @@ function Wind() {
         <div className="bgTurbines mb-0 page-section">
             <div className="container">
 
-                <PageHeading title={EducationPages[1].Title}/>
+                <PageHeading title={EducationPages[1].title}/>
 
-                <PageIntro image={EducationPages[1].CardPhoto} text={EducationPages[1].Description}/>
+                <PageIntro image={EducationPages[1].cardphoto} text={EducationPages[1].description}/>
 
                 <ParaGraph text={`Wind power or wind energy is the use of wind to provide the mechanical power
                 through wind turbines to turn electric generators and traditionally to do other work, like milling
