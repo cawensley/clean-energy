@@ -6,7 +6,7 @@ import PageHeading from "../../molecules/PageHeading";
 
 function Education() {
     return (
-        <div className="mb-0 page-section bgTurbines">
+        <div className="p-padding p-background_image mb-0 text-center">
             <div className="container">
 
                 <PageHeading title={"Clean Energy Education"}/>
@@ -19,4 +19,3 @@ function Education() {
 }
 
 export default Education;
-

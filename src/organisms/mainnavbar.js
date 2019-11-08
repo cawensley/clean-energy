@@ -3,18 +3,12 @@ import React from "react";
 
 const MainNavBar=()=> {
     return (
-        <nav className="bg-secondary navbar navbar-expand fixed-top text-uppercase mainNav">
+        <nav className="bg-secondary navbar navbar-expand fixed-top o-mainnavbar_fonts o-mainnavbar_padding">
             <div className="container">
-                <Link to="/" className="navbar-brand nav-link py-3 px-3 rounded">Home</Link>
-                <div>
-                    <ul className="navbar-nav navbar-expand ml-auto">
-                        <li className="nav-item mx-1">
-                            <Link to="/education" className="nav-link py-3 px-3 rounded">Education</Link>
-                        </li>
-                        <li className="nav-item mx-1">
-                            <Link to="/about" className="nav-link py-3 px-3 rounded">About</Link>
-                        </li>
-                    </ul>
+                    <Link to="/" className="navbar-brand py-3 px-3 rounded text-uppercase">Home</Link>
+                <div className="ml-auto">
+                    <Link to="/education" className="navbar-brand py-3 px-3 rounded">Education</Link>
+                    <Link to="/about" className="navbar-brand py-3 px-3 rounded">About</Link>
                 </div>
             </div>
         </nav>

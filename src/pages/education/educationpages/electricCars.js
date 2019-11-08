@@ -2,24 +2,24 @@ import React from "react";
 import {EducationPages} from "../../../atoms/RawEducationData";
 import PageHeading from "../../../molecules/PageHeading";
 import PageIntro from "../../../molecules/PageIntro";
-import ParaGraph from "../../../atoms/ParaGraph";
+import ParaGraphtext from "../../../atoms/ParaGraphtext";
 
 function electricCars() {
     return (
-        <div className="bgTurbines mb-0 page-section">
+        <div className="p-padding p-background_image mb-0">
             <div className="container">
 
                 <PageHeading title={EducationPages[2].title}/>
 
-                <PageIntro image={EducationPages[2].cardphoto} text={EducationPages[2].description}/>
+                <PageIntro cardphoto={EducationPages[2].cardphoto} text={EducationPages[2].description}/>
 
-                <ParaGraph text={`An electric car is an automobile that is propelled by one or more electric motors,
+                <ParaGraphtext text={`An electric car is an automobile that is propelled by one or more electric motors,
                 using energy stored in rechargeable batteries. The first practical electric cars were produced in the 1880s.
                  Electric cars were popular in the late 19th century and early 20th century, until advances in internal combustion
                 engines, electric starters in particular, and mass production of cheaper gasoline vehicles led to a decline in the
                 use of electric drive vehicles.`}/>
 
-                <ParaGraph text={`From 2008, a renaissance in electric vehicle manufacturing occurred due to advances in batteries,
+                <ParaGraphtext text={`From 2008, a renaissance in electric vehicle manufacturing occurred due to advances in batteries,
                 illnesses and deaths due to air pollution, and the desire to reduce greenhouse gas emissions.
                 Several national and local governments have established government incentives for plug-in electric vehicles,
                 tax credits, subsidies, and other incentives to promote the introduction and adoption in the mass market of
@@ -29,13 +29,13 @@ function electricCars() {
                 January 2019 and updated in April, a Reuters analysis of 29 global automakers concluded that automakers
                 are planning on spending $300 billion over next 5 to 10 years on electric cars, with 45% of that in China.`}/>
 
-                <ParaGraph text={`Charging an electric car can be done at a variety of charging stations, these charging stations can be
+                <ParaGraphtext text={`Charging an electric car can be done at a variety of charging stations, these charging stations can be
                 installed in both houses and public areas. The two all-time best selling electric cars, the Nissan
                 Leaf and the Tesla Model S, have EPA-rated ranges reaching up to 243 km (151 miles) and 600 km (370 miles)
                 respectively. The Leaf is the best-selling highway-capable electric car ever with more than
                 400,000 units sold, followed by the Tesla Model S with over 400,000 units sold worldwide by June 2019.`}/>
 
-                <ParaGraph text={`As of December 2018, there were about 5.3 million light-duty all-electric and plug-in hybrid
+                <ParaGraphtext text={`As of December 2018, there were about 5.3 million light-duty all-electric and plug-in hybrid
                 vehicles in use around the world. Despite the rapid growth experienced, the global stock of
                 plug-in electric cars represented just about 1 out of every 250 vehicles (0.40%) on the world's roads
                 by the end of 2018. The plug-in car market is shifting towards fully electric battery vehicles,

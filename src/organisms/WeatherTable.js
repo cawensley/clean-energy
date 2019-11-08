@@ -79,8 +79,7 @@ class WeatherTable extends Component {
         var windSpeed = (currentWeather.wind.speed)*2.237;
 
         return (
-            <div className="container d-flex justify-content-center">
-                <table className="table table-dark table-striped table-bordered table-sm text-center w-auto">
+                <table className="table table-dark table-striped table-bordered text-center mb-4">
                     <tbody>
                     <tr className="h6">
                         <td className="align-middle text-warning">Enter a Zip Code for current Weather data:</td>
@@ -125,7 +124,6 @@ class WeatherTable extends Component {
                     </tr>
                     </tbody>
                 </table>
-            </div>
         );
     }
 }

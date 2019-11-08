@@ -8,8 +8,8 @@ const Card=({
             weblink
 })=> {
     return (
-        <div className="card d-inline-flex align-content-start d-wrap m-1">
-            <img className="imagz card-img-top" src={cardphoto} alt="Error Loading"/>
+        <div className="card m-card-width d-inline-flex m-1">
+            <img className="card-img-top" src={require(`../images/${cardphoto}`)} alt="Error Loading" height={200}/>
                 <div className="card-body">
                     <h5 className="card-title">{title}</h5>
                     <p className="card-text lead">{description}</p>

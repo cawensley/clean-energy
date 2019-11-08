@@ -1,13 +1,14 @@
 import React from 'react';
+import Headingtext from "../atoms/Headingtext";
 
-const PageIntro=({image,text})=> {
+const PageIntro=({cardphoto,text})=> {
     return (
             <div className="row d-flex">
                 <div className="col-lg-6 col-xl-6 mb-3">
-                    <img className="imagzlarge" src={image} alt="Error Loading"/>
+                    <img className="m-PageIntro_image-width" src={require(`../images/${cardphoto}`)} alt="Error Loading"/>
                 </div>
-                <div className="col-lg-6 col-xl-6 mb-5 text-white font-italic h2">
-                    {text}
+                <div className="col-lg-6 col-xl-6 mb-5">
+                    <Headingtext text={text}/>
                 </div>
             </div>
     )
