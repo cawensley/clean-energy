@@ -43,20 +43,25 @@ class WeatherTable extends Component {
 
     componentDidMount() {
         this.setState({isLoading: true});
-        navigator.geolocation.getCurrentPosition(position => {
-            fetch(`https://api.bigdatacloud.net/data/reverse-geocode-client?latitude=${position.coords.latitude}&longitude=${position.coords.longitude}&localityLanguage=en`)
-                .then(response=> {
-                    if (response.ok) {return response.json();}
-                    else {throw new Error(`Can't Locate Your Zip Code.`);}})
-                .then(data => {
-                    if (localStorage.getItem('storedZip')===`null`) {
-                        this.setState({input: data.postcode})}
-                    else {
-                        this.setState({input: localStorage.getItem('storedZip')})
-                    }})
-                .then(this.onButtonSubmit)
-                .catch(error => this.setState({error,isLoading: false}))
-        });
+        navigator.geolocation.getCurrentPosition(
+position => {
+                    fetch(`https://api.bigdatacloud.net/data/reverse-geocode-client?latitude=${position.coords.latitude}&longitude=${position.coords.longitude}&localityLanguage=en`)
+                    .then(response=> {return response.json();})
+                    .then(data => {
+                        if (localStorage.getItem('storedZip') !== "null") {
+                            this.setState({input: localStorage.getItem('storedZip')})}
+                        if (this.state.input === null) {this.setState({input: data.postcode})}})
+                    .then(this.onButtonSubmit);
+                    },
+    error => {
+                    console.warn('Cant locate your zip code.');
+                    if (localStorage.getItem('storedZip') !== "null") {
+                        this.setState({input: localStorage.getItem('storedZip')})}
+                    if (this.state.input !== null) {
+                        this.onButtonSubmit();}
+                    this.setState({isLoading: false});
+                    },
+        {enableHighAccuracy: true,timeout:5000,maximumAge:0});
     };
 
     refreshPage = () => {
