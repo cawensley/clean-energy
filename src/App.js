@@ -6,29 +6,25 @@ import Education from "./pages/education/education"
 import Solar from "./pages/education/educationpages/solar"
 import Wind from "./pages/education/educationpages/wind"
 import electricCars from "./pages/education/educationpages/electricCars"
-import MainNavBar from "./components/mainnavbar"
-import Footer from "./components/Footer";
+import MainNavBar from "./organisms/mainnavbar"
+import Footer from "./organisms/Footer";
 
 class App extends Component {
 
     render() {
         return (
-                <div>
-                    <Router>
-                        <div>
-                            <MainNavBar/>
-                            <Switch>
-                                <Route path="/education/solar" component={Solar}/>
-                                <Route path="/education/wind" component={Wind}/>
-                                <Route path="/education/electricCars" component={electricCars}/>
-                                <Route path="/education" component={Education}/>
-                                <Route path="/about" component={About}/>
-                                <Route path="/" component={Home}/>
-                            </Switch>
-                            <Footer/>
-                        </div>
-                    </Router>
-                </div>
+            <Router>
+                <MainNavBar/>
+                <Switch>
+                    <Route path="/education/solar" component={Solar}/>
+                    <Route path="/education/wind" component={Wind}/>
+                    <Route path="/education/electricCars" component={electricCars}/>
+                    <Route path="/education" component={Education}/>
+                    <Route path="/about" component={About}/>
+                    <Route path="/" component={Home}/>
+                </Switch>
+                <Footer/>
+            </Router>
         )
     }
 }

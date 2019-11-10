@@ -1,18 +1,88 @@
-// Import variables (overrides Bootstrap defaults)
-@import "base/variables";
+$primary: #1abc9c !default;
+$secondary: #2c3e50 !default;
+$dark: #000000 !default;
+$font-family-sans-serif: "Lato", -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, "Noto Sans", sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", 'Noto Color Emoji' !default;
+$headings-font-family: "Montserrat", -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, "Noto Sans", sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", 'Noto Color Emoji' !default;
+$headings-font-weight: 700 !default;
 
-// Import Bootstrap
 @import "bootstrap/scss/bootstrap.scss";
 
-// Import base styles
-@import "base/page";
+.p-padding {
+  padding-top: 6rem;
+  padding-bottom: 6rem;
+  min-height: 92rem;
+}
 
-// Import components styles
-@import "components/divider";
-@import "components/buttons";
+.m-Pageheading_divider {
+  margin: 1.25rem 0 1.5rem;
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  .m-Pageheading_divider_line {
+    width: 100%;
+    max-width: 7rem;
+    height: 0.25rem;
+    &:first-child {
+      margin-right: 1rem;
+    }
+    &:last-child {
+      margin-left: 1rem;
+    }
+  }
+  .m-Pageheading_divider_icon {
+    font-size: 2rem;
+  }
+}
 
-// Import layout styles
-@import "layout/navbar";
-@import "layout/masthead";
-@import "layout/portfolio";
-@import "layout/footer";
+.a-Buttonlink_border {
+  border-radius: 100%;
+  display: inline-flex;
+  width: 3.25rem;
+  height: 3.25rem;
+  font-size: 1.25rem;
+  justify-content: center;
+  align-items: center;
+}
+
+.o-mainnavbar_fonts {
+  font-family: $headings-font-family;
+  font-weight: $headings-font-weight;
+}
+
+.o-mainnavbar_padding {
+  padding-top: 0rem;
+  padding-bottom: 0rem;
+}
+
+.navbar-brand {
+  color: $white;
+  &:hover {color: $primary;}
+  &:focus {color: $warning;}
+}
+
+.m-card-width {
+  width: 22rem;
+  max-width: 45%;
+}
+
+.m-PageIntro_image-width {
+  width: 100%;
+  border: 2px solid black;
+}
+
+.p-background_image {
+  background-image: url("../images/turbine.jpeg");
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+.m-AboutPerson_facephoto-height {
+  height: 16rem;
+  border: 2px solid black;
+}
+
+.a-ParaGraph_background-transparent {
+  background-color: rgba(0,0,0,0.50);
+}
