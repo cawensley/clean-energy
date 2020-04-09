@@ -74,12 +74,20 @@ position => {
 
         if (error) {return (
             <div className="text-center text-white">
-            <p>{error.message}</p>
-            <button type="button" value="Refresh" className="btn btn-primary mb-3" onClick={this.refreshPage}>Refresh</button>
-            </div>)};
+                <p>{error.message}</p>
+                <button type="button"
+                        value="Refresh"
+                        className="btn btn-primary mb-3"
+                        onClick={this.refreshPage}>Refresh
+                </button>
+            </div>
+        )}
 
-        if (isLoading) {return (<p className="text-center text-white">
-            <i className="fas fa-5x fa-cog fa-spin"></i></p>)};
+        if (isLoading) {return (
+            <p className="text-center text-white">
+                <i className="fas fa-5x fa-cog fa-spin"></i>
+            </p>
+        )}
 
         var windSpeed = (currentWeather.wind.speed)*2.237;
 
@@ -94,6 +102,14 @@ position => {
                             <button type="submit" value="Submit" className="btn btn-primary btn-sm"
                                     onClick={this.onButtonSubmit}>Submit</button>
                         </td>
+                    </tr>
+                    <tr className="h6">
+                        <td>Zipcode:</td>
+                        <td>{localStorage.getItem('storedZip')}</td>
+                    </tr>
+                    <tr className="h6">
+                        <td>City:</td>
+                        <td>{currentWeather.name}</td>
                     </tr>
                     <tr className="h6">
                         <td>Current Temp.:</td>
@@ -118,14 +134,6 @@ position => {
                     <tr className="h6">
                         <td>Humidity:</td>
                         <td>{currentWeather.main.humidity}%</td>
-                    </tr>
-                    <tr className="h6">
-                        <td>City:</td>
-                        <td>{currentWeather.name}</td>
-                    </tr>
-                    <tr className="h6">
-                        <td>Zipcode:</td>
-                        <td>{localStorage.getItem('storedZip')}</td>
                     </tr>
                     </tbody>
                 </table>
