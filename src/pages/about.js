@@ -17,10 +17,10 @@ const About = () => (
                         Colorado.`}
             />
             <AboutPerson
-                image={`AlexWensleyCrop.jpg`}
-                title={`Alex Wensley – Webmaster and Engineer`}
-                text={`Alex Wensley is a Junior Web Developer and has a masters degree in Materials Science & Engineering (2005 Virginia Tech).
-                        He spent 11 years solving material failures for both litigation and industrial clients, and is a registered professional engineer in N.C. From 2019 to the present he has studied
+                image={`headshot_square.jpg`}
+                title={`Alex Wensley – Web Developer and Engineer`}
+                text={`Alex Wensley is a Front-end Web Developer and has a masters degree in Materials Science & Engineering (2005 Virginia Tech).
+                         He spent 11 years solving material failures for both litigation and industrial clients.  From 2019 to the present he has studied
                         web development and networking engineering.`}
             />
         </div>
