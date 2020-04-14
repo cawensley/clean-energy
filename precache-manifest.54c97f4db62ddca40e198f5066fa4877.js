@@ -1,10 +1,10 @@
 self.__precacheManifest = (self.__precacheManifest || []).concat([
   {
-    "revision": "156849bb548d0df657446bacc34ec553",
+    "revision": "4900a48d01e60ebddf8c5c3416ff810c",
     "url": "/clean-energy/index.html"
   },
   {
-    "revision": "c3acf2509dc4e2032bff",
+    "revision": "a47552014fae863e8034",
     "url": "/clean-energy/static/css/main.e14bf935.chunk.css"
   },
   {
@@ -16,16 +16,16 @@ self.__precacheManifest = (self.__precacheManifest || []).concat([
     "url": "/clean-energy/static/js/2.e8f75f5c.chunk.js.LICENSE.txt"
   },
   {
-    "revision": "c3acf2509dc4e2032bff",
-    "url": "/clean-energy/static/js/main.aad58612.chunk.js"
+    "revision": "a47552014fae863e8034",
+    "url": "/clean-energy/static/js/main.32d5851e.chunk.js"
   },
   {
     "revision": "8563c59651acdab3cf68",
     "url": "/clean-energy/static/js/runtime-main.f88a0d1a.js"
   },
   {
-    "revision": "74cc082b164a0dd3912093eff0bd1e1e",
-    "url": "/clean-energy/static/media/AlexWensleyCrop.74cc082b.jpg"
+    "revision": "758776cf1d832fb59547216a4309bfbc",
+    "url": "/clean-energy/static/media/headshot_square.758776cf.jpg"
   },
   {
     "revision": "75013d9842d1e342a0356faee49e0eb4",
