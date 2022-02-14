@@ -1,5 +1,4 @@
 import React from 'react';
-import WeatherTable from "../organisms/WeatherTable";
 import PageHeading from "../molecules/PageHeading";
 import Headingtext from "../atoms/Headingtext";
 
@@ -7,7 +6,6 @@ const Home = () => (
     <div className="p-padding p-background_image mb-0">
         <div className="container">
             <PageHeading title={"Clean Energy Home Page"}/>
-            <WeatherTable/>
             <Headingtext text={`Electricity, after food, water and shelter, is probably the most important aspect of modern human life.
                 Reliable electricity is a necessity in our lives, at home, at work, and for recreation. We don’t often
                 appreciate how dependent we are on electricity until there is a power outage.`}

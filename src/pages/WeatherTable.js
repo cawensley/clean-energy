@@ -1,5 +1,6 @@
 import React, { Component } from 'react';
 import Fahrenheit from "../atoms/tempconversion";
+import PageHeading from "../molecules/PageHeading";
 
 class WeatherTable extends Component {
     constructor() {
@@ -84,59 +85,69 @@ position => {
         )}
 
         if (isLoading) {return (
-            <p className="text-center text-white">
-                <i className="fas fa-5x fa-cog fa-spin"></i>
-            </p>
+            <div className="p-padding p-background_image mb-0">
+                <div className="container">
+                    <PageHeading title={"Weather"}/>
+                    <p className="text-center text-white">
+                        <i className="fas fa-5x fa-cog fa-spin"></i>
+                    </p>
+                </div>
+            </div>
         )}
 
         var windSpeed = (currentWeather.wind.speed)*2.237;
 
         return (
-                <table className="table table-dark table-striped table-bordered text-center mb-4">
-                    <tbody>
-                    <tr className="h6">
-                        <td className="align-middle text-warning">Enter a Zip Code for current Weather data:</td>
-                        <td>
-                            <input type="text" size="8" maxLength="5" className="h6" onChange={this.onInputChange}
-                            onKeyPress={this.keyPressed}/>
-                            <button type="submit" value="Submit" className="btn btn-primary btn-sm"
-                                    onClick={this.onButtonSubmit}>Submit</button>
-                        </td>
-                    </tr>
-                    <tr className="h6">
-                        <td>Zipcode:</td>
-                        <td>{localStorage.getItem('storedZip')}</td>
-                    </tr>
-                    <tr className="h6">
-                        <td>City:</td>
-                        <td>{currentWeather.name}</td>
-                    </tr>
-                    <tr className="h6">
-                        <td>Current Temp.:</td>
-                        <td><Fahrenheit Ktemp={currentWeather.main.temp}/> F</td>
-                    </tr>
-                    <tr className="h6">
-                        <td>High Temp.:</td>
-                        <td><Fahrenheit Ktemp={currentWeather.main.temp_max}/> F</td>
-                    </tr>
-                    <tr className="h6">
-                        <td>Low Temp.:</td>
-                        <td><Fahrenheit Ktemp={currentWeather.main.temp_min}/> F</td>
-                    </tr>
-                    <tr className="h6">
-                        <td>Cloudiness:</td>
-                        <td>{currentWeather.weather[0].description}</td>
-                    </tr>
-                    <tr className="h6">
-                        <td>Wind Speed:</td>
-                        <td>{windSpeed.toFixed(1)} mph</td>
-                    </tr>
-                    <tr className="h6">
-                        <td>Humidity:</td>
-                        <td>{currentWeather.main.humidity}%</td>
-                    </tr>
-                    </tbody>
-                </table>
+            <div className="p-padding p-background_image mb-0">
+                <div className="container">
+                    <PageHeading title={"Weather"}/>
+                    <table className="table table-dark table-striped table-bordered text-center mb-4">
+                        <tbody>
+                        <tr className="h6">
+                            <td className="align-middle text-warning">Enter a Zip Code for current Weather data:</td>
+                            <td>
+                                <input type="text" size="8" maxLength="5" className="h6" onChange={this.onInputChange}
+                                onKeyPress={this.keyPressed}/>
+                                <button type="submit" value="Submit" className="btn btn-primary btn-sm"
+                                        onClick={this.onButtonSubmit}>Submit</button>
+                            </td>
+                        </tr>
+                        <tr className="h6">
+                            <td>Zipcode:</td>
+                            <td>{localStorage.getItem('storedZip')}</td>
+                        </tr>
+                        <tr className="h6">
+                            <td>City:</td>
+                            <td>{currentWeather.name}</td>
+                        </tr>
+                        <tr className="h6">
+                            <td>Current Temp.:</td>
+                            <td><Fahrenheit Ktemp={currentWeather.main.temp}/> F</td>
+                        </tr>
+                        <tr className="h6">
+                            <td>High Temp.:</td>
+                            <td><Fahrenheit Ktemp={currentWeather.main.temp_max}/> F</td>
+                        </tr>
+                        <tr className="h6">
+                            <td>Low Temp.:</td>
+                            <td><Fahrenheit Ktemp={currentWeather.main.temp_min}/> F</td>
+                        </tr>
+                        <tr className="h6">
+                            <td>Cloudiness:</td>
+                            <td>{currentWeather.weather[0].description}</td>
+                        </tr>
+                        <tr className="h6">
+                            <td>Wind Speed:</td>
+                            <td>{windSpeed.toFixed(1)} mph</td>
+                        </tr>
+                        <tr className="h6">
+                            <td>Humidity:</td>
+                            <td>{currentWeather.main.humidity}%</td>
+                        </tr>
+                        </tbody>
+                    </table>
+                </div>
+            </div>
         );
     }
 }

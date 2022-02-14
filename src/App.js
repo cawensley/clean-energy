@@ -8,6 +8,7 @@ import Wind from "./pages/educationpages/wind"
 import ElectricCars from "./pages/educationpages/electricCars"
 import MainNavBar from "./organisms/mainnavbar"
 import Footer from "./organisms/Footer";
+import WeatherTable from "./pages/WeatherTable";
 
 const App = () => (
     <Router>
@@ -17,6 +18,7 @@ const App = () => (
             <Route path="/education/wind" element={<Wind/>}/>
             <Route path="/education/electricCars" element={<ElectricCars/>}/>
             <Route path="/education" element={<Education/>}/>
+            <Route path="/weather" element={<WeatherTable/>}/>
             <Route path="/about" element={<About/>}/>
             <Route path="/" element={<Home/>}/>
         </Routes>
