@@ -4,7 +4,7 @@ import PageHeading from "../../molecules/PageHeading";
 import PageIntro from "../../molecules/PageIntro";
 import ParaGraphtext from "../../atoms/ParaGraphtext";
 
-const electricCars = () => (
+const ElectricCars = () => (
     <div className="p-padding p-background_image mb-0">
         <div className="container">
 
@@ -45,4 +45,4 @@ const electricCars = () => (
     </div>
 )
 
-export default electricCars;
+export default ElectricCars;
