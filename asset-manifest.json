@@ -1,7 +1,7 @@
 {
   "files": {
     "main.css": "/clean-energy/static/css/main.9d7e830d.css",
-    "main.js": "/clean-energy/static/js/main.fff5998b.js",
+    "main.js": "/clean-energy/static/js/main.ed5fea0c.js",
     "static/media/solar.jpeg": "/clean-energy/static/media/solar.00bebfdc2fcb5318a688.jpeg",
     "static/media/wind.jpg": "/clean-energy/static/media/wind.0751adf75113adf48395.jpg",
     "static/media/headshot_square.jpg": "/clean-energy/static/media/headshot_square.3e14e29d7dac4e76e589.jpg",
@@ -10,10 +10,10 @@
     "static/media/kenface.jpg": "/clean-energy/static/media/kenface.16e0d0f0f4abf0db6332.jpg",
     "index.html": "/clean-energy/index.html",
     "main.9d7e830d.css.map": "/clean-energy/static/css/main.9d7e830d.css.map",
-    "main.fff5998b.js.map": "/clean-energy/static/js/main.fff5998b.js.map"
+    "main.ed5fea0c.js.map": "/clean-energy/static/js/main.ed5fea0c.js.map"
   },
   "entrypoints": [
     "static/css/main.9d7e830d.css",
-    "static/js/main.fff5998b.js"
+    "static/js/main.ed5fea0c.js"
   ]
 }
