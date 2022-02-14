@@ -1,28 +1,19 @@
 {
   "files": {
-    "main.css": "/clean-energy/static/css/main.e14bf935.chunk.css",
-    "main.js": "/clean-energy/static/js/main.32d5851e.chunk.js",
-    "main.js.map": "/clean-energy/static/js/main.32d5851e.chunk.js.map",
-    "runtime-main.js": "/clean-energy/static/js/runtime-main.f88a0d1a.js",
-    "runtime-main.js.map": "/clean-energy/static/js/runtime-main.f88a0d1a.js.map",
-    "static/js/2.e8f75f5c.chunk.js": "/clean-energy/static/js/2.e8f75f5c.chunk.js",
-    "static/js/2.e8f75f5c.chunk.js.map": "/clean-energy/static/js/2.e8f75f5c.chunk.js.map",
+    "main.css": "/clean-energy/static/css/main.9d7e830d.css",
+    "main.js": "/clean-energy/static/js/main.fff5998b.js",
+    "static/media/solar.jpeg": "/clean-energy/static/media/solar.00bebfdc2fcb5318a688.jpeg",
+    "static/media/wind.jpg": "/clean-energy/static/media/wind.0751adf75113adf48395.jpg",
+    "static/media/headshot_square.jpg": "/clean-energy/static/media/headshot_square.3e14e29d7dac4e76e589.jpg",
+    "static/media/turbine.jpeg": "/clean-energy/static/media/turbine.85f58d3413b970c1b415.jpeg",
+    "static/media/porschetaycan.jpeg": "/clean-energy/static/media/porschetaycan.ab2c4fab392f232e10f6.jpeg",
+    "static/media/kenface.jpg": "/clean-energy/static/media/kenface.16e0d0f0f4abf0db6332.jpg",
     "index.html": "/clean-energy/index.html",
-    "precache-manifest.4f5321cdbb25fbf6c1f2d540fb2dbd3c.js": "/clean-energy/precache-manifest.4f5321cdbb25fbf6c1f2d540fb2dbd3c.js",
-    "service-worker.js": "/clean-energy/service-worker.js",
-    "static/css/main.e14bf935.chunk.css.map": "/clean-energy/static/css/main.e14bf935.chunk.css.map",
-    "static/js/2.e8f75f5c.chunk.js.LICENSE.txt": "/clean-energy/static/js/2.e8f75f5c.chunk.js.LICENSE.txt",
-    "static/media/headshot_square.jpg": "/clean-energy/static/media/headshot_square.758776cf.jpg",
-    "static/media/kenface.jpg": "/clean-energy/static/media/kenface.75013d98.jpg",
-    "static/media/porschetaycan.jpeg": "/clean-energy/static/media/porschetaycan.6eb9872c.jpeg",
-    "static/media/solar.jpeg": "/clean-energy/static/media/solar.047fff22.jpeg",
-    "static/media/freelancer.scss": "/clean-energy/static/media/turbine.c3845d12.jpeg",
-    "static/media/wind.jpg": "/clean-energy/static/media/wind.733d4b07.jpg"
+    "main.9d7e830d.css.map": "/clean-energy/static/css/main.9d7e830d.css.map",
+    "main.fff5998b.js.map": "/clean-energy/static/js/main.fff5998b.js.map"
   },
   "entrypoints": [
-    "static/js/runtime-main.f88a0d1a.js",
-    "static/js/2.e8f75f5c.chunk.js",
-    "static/css/main.e14bf935.chunk.css",
-    "static/js/main.32d5851e.chunk.js"
+    "static/css/main.9d7e830d.css",
+    "static/js/main.fff5998b.js"
   ]
 }
